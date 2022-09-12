@@ -12,10 +12,6 @@
             background-attachment: fixed;
             background-size: cover;
         }
-
-    h1 {
-        margin: 0;
-    }
     
     #header {
         width: 100%;
@@ -27,8 +23,9 @@
     }
 
     #game {
+        width: 500px;
         position: absolute;
-        top: calc(50% + 60px);
+        top: calc(50% + 40px);
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -36,26 +33,18 @@
     h1 {
         color: white;
         text-align: center;
+        margin: 0;
     }  
 
     .card {
+        width: 115px;
+        height: 115px;
         position: relative;
         float: left;
         margin: 5px;
         /* 設定子元素在 3D 空間內 */
         transform-style: preserve-3d;
         transition: transform 1s;
-    }
-
-    @media (max-width: 1199px) {
-        #game {
-            width: 500px;
-        }
-
-        .card {
-            width: 115px;
-            height: 115px;
-        }
     }
 
     @media (max-width: 991px) {
